@@ -14,7 +14,8 @@ a {
     max-width: 100%;
     display: none; }
   .intro--container {
-    position: relative; }
+    position: relative;
+    background-color: black; }
   .intro--header, .intro--subheader, .intro--scroll {
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -53,6 +54,8 @@ a {
     bottom: auto;
     left: auto;
     right: .5em; }
+  .intro--container {
+    height: 100vh; }
   .intro--subheader {
     top: auto;
     bottom: auto;

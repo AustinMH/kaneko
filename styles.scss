@@ -27,6 +27,7 @@ a {
     }
     &--container {
         position: relative;
+        background-color:black;
     }
     &--header,
     &--subheader,
@@ -83,6 +84,9 @@ a {
             bottom: auto;
             left: auto;
             right: .5em;
+        }
+        &--container {
+            height:100vh;
         }
         &--subheader {
             top: auto;
