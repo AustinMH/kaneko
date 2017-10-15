@@ -8,14 +8,12 @@ a {
 .intro {
   max-width: 100%;
   text-align: center; }
-  .intro--background {
-    max-width: 100%; }
-  .intro--background-video {
-    max-width: 100%;
-    display: none; }
   .intro--container {
     position: relative;
-    background-color: black; }
+    height: 100vh;
+    width: 100vw;
+    background: black url(media/500vwBG.png) scroll no-repeat center center;
+    background-size: cover; }
   .intro--header, .intro--subheader, .intro--scroll {
     font-family: 'Raleway', sans-serif;
     color: white;
