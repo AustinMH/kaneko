@@ -27,7 +27,8 @@ a {
     }
     &--background-video {
         max-width: 100%;
-        display: none; }
+        display: none; 
+    }
     &--header,
     &--subheader,
     &--scroll {
@@ -75,10 +76,33 @@ a {
     }
 }
 
+@media only screen and (min-width:470px) {
+    .intro {
+        &--header {
+            top: -.9em;
+        }
+        &--subheader {
+            top: 1em;
+        }
+    }
+} 
+
+@media only screen and (min-width:630px) {
+    .intro {
+        &--header {
+            font-size: 2.7em;
+        }
+        &--subheader {
+            font-size: 1em;
+        }
+    }
+}
+
 @media only screen and (min-width:1000px) {
     .intro {
         &--background-video {
-            display: block; 
+            display: block;
+            height: 100vh;
         }
         &--header {
             font-size: 2em;
@@ -104,12 +128,6 @@ a {
             bottom: 3em;
             left: 48%;
             right: auto;
-        }
-        &--background {
-            display: none;
-        }
-        &--background-video {
-            display: block;
         }
     }
 }
@@ -204,6 +222,26 @@ a {
     .creativity--right-column {
         width: 48%;
         display: inline-block;
+    }
+}
+
+@media only screen and (min-width:2260px) {
+    .creativity {
+        &--header {
+            font: {
+                size: 4em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:3000px) {
+        .creativity {
+        &--header {
+            font: {
+                size: 5em;
+            }
+        }
     }
 }
 
@@ -403,11 +441,17 @@ a {
         &--container {
             background-image: url(media/bg/p4-3tablet.png)
         }
+        &--background-video {
+            max-width: 100%;
+            display: none; 
+        }
         &--header {
             top: .5em;
+            font-size: 3.5em;
         }
         &--subheader {
             top: 4.8em;
+            font-size: 1.3em;
         }
     }
 }
@@ -418,6 +462,10 @@ a {
     .intro {
         &--container {
             background-image: url(media/bg/l4-3tablet.png)
+        }
+        &--background-video {
+            max-width: 100%;
+            display: none; 
         }
     }
 }
@@ -431,11 +479,17 @@ a {
         &--container {
             background-image: url(media/bg/p4-3tablet.png)
         }
+        &--background-video {
+            max-width: 100%;
+            display: none; 
+        }
         &--header {
             top: .5em;
+            font-size: 3.5em;
         }
         &--subheader {
             top: 4.8em;
+            font-size: 1.3em;
         }
     }
 }
@@ -443,8 +497,14 @@ a {
 /* Landscape */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    .intro--container {
-        background-image: url(media/bg/l4-3tablet.png)
+    .intro {
+        &--container {
+            background-image: url(media/bg/l4-3tablet.png);
+        }
+        &--background-video {
+            max-width: 100%;
+            display: none; 
+        }
     }
 }
 
@@ -461,11 +521,17 @@ a {
         &--container {
             background-image: url(media/bg/p4-3tablet.png)
         }
+        &--background-video {
+            max-width: 100%;
+            display: none; 
+        }
         &--header {
             top: .5em;
+            font-size: 3.5em;
         }
         &--subheader {
             top: 4.8em;
+            font-size: 1.3em;
         }
     }
 }
@@ -477,8 +543,14 @@ a {
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 
 @media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    .intro--container {
-        background-image: url(media/bg/l4-3tablet.png)
+    .intro {
+        &--container {
+            background-image: url(media/bg/l4-3tablet.png);
+        }
+        &--background-video {
+            max-width: 100%;
+            display: none; 
+        }
     }
 }
 
@@ -495,23 +567,23 @@ a {
         &--container {
             background-image: url(media/bg/p4-3tablet.png)
         }
+        &--background-video {
+            max-width: 100%;
+            display: none; 
+        }
         &--header {
+            font: {
+                size: 3.5em;
+            }
+            left:-80%;
             top: .5em;
-        }
-        &--subheader {
-            top: 4.8em;
-        }
-        &--header {
-        font: {
-            size: 3.5em;
-        }
-        left:-80%;
-        }
+            }
         &--subheader {
             font: {
                 size: 1.3em;
             }
             left:-60%;
+            top: 4.8em;
         }
         &--scroll {
             font: {
@@ -531,7 +603,13 @@ a {
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    .intro--container {
-        background-image: url(media/bg/l4-3tablet.png)
+    .intro {
+        &--container {
+            background-image: url(media/bg/l4-3tablet.png);
+        }
+        &--background-video {
+        max-width: 100%;
+        display: none; 
+    }
     }
 }

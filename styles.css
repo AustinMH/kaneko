@@ -48,9 +48,20 @@ a {
     height: 3px;
     background: #F3C715; }
 
+@media only screen and (min-width: 470px) {
+  .intro--header {
+    top: -.9em; }
+  .intro--subheader {
+    top: 1em; } }
+@media only screen and (min-width: 630px) {
+  .intro--header {
+    font-size: 2.7em; }
+  .intro--subheader {
+    font-size: 1em; } }
 @media only screen and (min-width: 1000px) {
   .intro--background-video {
-    display: block; }
+    display: block;
+    height: 100vh; }
   .intro--header {
     font-size: 2em;
     top: -1.3em;
@@ -71,11 +82,7 @@ a {
     top: auto;
     bottom: 3em;
     left: 48%;
-    right: auto; }
-  .intro--background {
-    display: none; }
-  .intro--background-video {
-    display: block; } }
+    right: auto; } }
 .creativity {
   position: relative;
   padding: 0% 5% 0% 5%;
@@ -144,6 +151,12 @@ a {
   .creativity--right-column {
     width: 48%;
     display: inline-block; } }
+@media only screen and (min-width: 2260px) {
+  .creativity--header {
+    font-size: 4em; } }
+@media only screen and (min-width: 3000px) {
+  .creativity--header {
+    font-size: 5em; } }
 .video {
   background-color: #F2F2F2; }
   .video--container {
@@ -277,27 +290,43 @@ a {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .intro--container {
     background-image: url(media/bg/p4-3tablet.png); }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; }
   .intro--header {
-    top: .5em; }
+    top: .5em;
+    font-size: 3.5em; }
   .intro--subheader {
-    top: 4.8em; } }
+    top: 4.8em;
+    font-size: 1.3em; } }
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .intro--container {
-    background-image: url(media/bg/l4-3tablet.png); } }
+    background-image: url(media/bg/l4-3tablet.png); }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; } }
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .intro--container {
     background-image: url(media/bg/p4-3tablet.png); }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; }
   .intro--header {
-    top: .5em; }
+    top: .5em;
+    font-size: 3.5em; }
   .intro--subheader {
-    top: 4.8em; } }
+    top: 4.8em;
+    font-size: 1.3em; } }
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .intro--container {
-    background-image: url(media/bg/l4-3tablet.png); } }
+    background-image: url(media/bg/l4-3tablet.png); }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; } }
 /* ----------- iPad Pro 10.5" ----------- */
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
@@ -305,16 +334,24 @@ a {
 @media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .intro--container {
     background-image: url(media/bg/p4-3tablet.png); }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; }
   .intro--header {
-    top: .5em; }
+    top: .5em;
+    font-size: 3.5em; }
   .intro--subheader {
-    top: 4.8em; } }
+    top: 4.8em;
+    font-size: 1.3em; } }
 /* Landscape */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .intro--container {
-    background-image: url(media/bg/l4-3tablet.png); } }
+    background-image: url(media/bg/l4-3tablet.png); }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; } }
 /* ----------- iPad Pro 12.9" ----------- */
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
@@ -322,16 +359,17 @@ a {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .intro--container {
     background-image: url(media/bg/p4-3tablet.png); }
-  .intro--header {
-    top: .5em; }
-  .intro--subheader {
-    top: 4.8em; }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; }
   .intro--header {
     font-size: 3.5em;
-    left: -80%; }
+    left: -80%;
+    top: .5em; }
   .intro--subheader {
     font-size: 1.3em;
-    left: -60%; }
+    left: -60%;
+    top: 4.8em; }
   .intro--scroll {
     font-size: 1.2em;
     letter-spacing: 5px;
@@ -342,6 +380,9 @@ a {
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .intro--container {
-    background-image: url(media/bg/l4-3tablet.png); } }
+    background-image: url(media/bg/l4-3tablet.png); }
+  .intro--background-video {
+    max-width: 100%;
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
